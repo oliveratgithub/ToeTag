@@ -1,0 +1,53 @@
+8
+
+dir
+10
+http://svn.fov120.com/ToeTag/trunk/English.lproj/MainMenu.nib
+http://svn.fov120.com/ToeTag
+
+
+
+2008-07-20T14:34:48.921961Z
+10
+willem
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+5239bf2e-db32-461f-9a2e-c1d31a80badb
+
+keyedobjects.nib
+file
+
+
+
+
+2008-07-20T10:23:21.000000Z
+6ac313a9c57c84dc0355a6601644795f
+2008-07-20T14:34:48.921961Z
+10
+willem
+has-props
+
+designable.nib
+file
+
+
+
+
+2008-07-20T10:23:21.000000Z
+af502a8f07f9010bf4c82d71d82b6b3e
+2008-07-20T14:34:48.921961Z
+10
+willem
+

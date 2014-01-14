@@ -1,0 +1,53 @@
+8
+
+dir
+10
+http://svn.fov120.com/ToeTag/trunk/English.lproj/MAPDocument.nib
+http://svn.fov120.com/ToeTag
+
+
+
+2008-03-15T12:46:30.236340Z
+1
+kristian
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+5239bf2e-db32-461f-9a2e-c1d31a80badb
+
+keyedobjects.nib
+file
+
+
+
+
+2008-03-29T10:16:49.000000Z
+fe2709eda52dcb9a88466c6c576b5c83
+2008-03-15T12:46:30.236340Z
+1
+kristian
+has-props
+
+designable.nib
+file
+
+
+
+
+2008-03-29T10:16:49.000000Z
+5c380042bfdff631917fec29bf669d2c
+2008-03-15T12:46:30.236340Z
+1
+kristian
+

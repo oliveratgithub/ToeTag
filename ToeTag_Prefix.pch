@@ -1,0 +1,239 @@
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
+
+#include "QuickLook.h"
+#define QLPreviewPanel NSClassFromString(@"QLPreviewPanel")
+
+// This is large enough to handle 2048 picks at once (8192 / 4)
+#define GL_PICK_BUFFER_SZ				8192
+
+#define ON_PLANE_EPSILON				0.01f
+#define VERTS_ARE_SAME_EPSILON			0.1f
+#define NUMBERS_ARE_SAME_LARGE_EPSILON	0.25f
+#define NUMBERS_ARE_SAME_EPSILON		0.01f
+#define VECTORS_ARE_SAME_EPSILON		0.1f
+#define WORLD_SZ						8192.0f
+#define WORLD_SZ_HALF					4096.0f
+#define PICK_AREA_SZ					8.0f
+#define POINT_SZ						8.0f
+
+// The max number of textures you can have in a WAD file.  This is necessary because the
+// WAD writing code doesn't like to dynamically allocate memory.
+
+#define MAX_WAD_ENTRIES					2048
+
+// Byte swap routines for handling data going to/from big endian systems (PowerPC)
+
+#define SWAPINT32(a)			a = CFSwapInt32LittleToHost( a )
+#define SWAPFLOAT32(a)\
+{\
+	uint32_t temp = CFSwapInt32LittleToHost(*((uint32_t*)&(a)));\
+	a = *((float*)&temp);\
+}
+
+typedef enum
+{
+	SI_Negative = -1,
+	SI_Zero = 0,
+	SI_Positive = 1
+} ESign;
+
+#define signof(a) ((a == 0) ? SI_Zero : (a < 0 ? SI_Negative : SI_Positive))
+
+typedef unsigned char	byte;
+
+typedef enum
+{
+	S_Behind,
+	S_OnPlane,
+	S_Front
+} ESide;
+
+typedef enum _ERenderArrayElementType
+{
+	RAET_Vert,
+	RAET_VertUV,
+	RAET_VertUVColor,
+	RAET_VertColor,
+} ERenderArrayElementType;
+
+typedef enum _EHistoryActionType
+{
+	TUAT_SelectObject,
+	TUAT_UnselectObject,
+	TUAT_HideObject,
+	TUAT_ShowObject,
+	TUAT_DeleteBrush,
+	TUAT_CreateEntity,
+	TUAT_DeleteEntity,
+	TUAT_DragEntity,
+	TUAT_AddEntity,
+	TUAT_AddBrush,
+	TUAT_DragBrush,
+	TUAT_DragVertex,
+	TUAT_ModifyFaceTextureName,
+	TUAT_ModifyFaceTextureAttribs,
+	TUAT_RotateEntity,
+	TUAT_ModifyFaceVerts,
+	TUAT_ChangeEntityClassname,
+	TUAT_AddBrushToEntity,
+	TUAT_RemoveBrushFromEntity,
+} EHistoryActionType;
+
+typedef enum
+{
+	TMA_Select,
+	TMA_SelectFace,
+	TMA_RotateCamera,
+	TMA_PanCamera,
+	TMA_DragSelection,
+	TMA_RotateSelection,
+	TMA_SetClipPoints,
+	TMA_BoxSelection,
+	TMA_SetPivotLocation,
+} EMouseAction;
+
+typedef enum
+{
+	TFS_Front,			// Split results are entirely in front of the plane
+	TFS_Back,			// Split results are entirely behind the plane
+	TFS_Split,			// Split results are both in front of and behind the plane
+} EFaceSplit;
+
+typedef enum
+{
+	TSC_Level,			// Object is a part of the level (a brush, an entity, etc)
+	TSC_Texture,		// Object is a texture and appears in the texture browser
+	TSC_Face,			// Object is a face on a brush
+	TSC_Edge,
+	TSC_Vertex,			// Object is a vertex on a face of a brush
+} ESelectCategory;
+
+typedef enum
+{
+	TO_Top_XZ,			// XZ axis, rotations around Y
+	TO_Front_XY,		// XY axis, rotations around Z
+	TO_Side_YZ,			// YZ axis, rotations around X
+	TO_Perspective,		// 3D viewport
+} EOrientation;
+
+typedef enum
+{
+	TBUF_All,
+	TBUF_InUse,
+	TBUF_MRU,
+} ETextureBrowserUsageFilter;
+
+typedef enum
+{
+	TBO_Full,
+	TBO_Quick,
+	TBO_GeometryOnly,
+	TBO_EntitiesOnly,
+	TBO_LightingOnly,
+} ERebuildOption;
+
+typedef enum
+{
+	EF_All,
+	EF_Easy,
+	EF_Normal,
+	EF_HardNightmare,
+	EF_Deathmatch,
+} EEntityFilter;
+
+typedef enum
+{
+	SF_NotInEasy = 256,
+	SF_NotInNormal = 512,
+	SF_NotInHardNightmare = 1024,
+	SF_NotInDeathmatch = 2048,
+} ESpawnFlags;
+
+@class TFace;
+
+#import <OpenGL/gl.h>
+#import <OpenGL/glext.h>
+#import <OpenGL/OpenGL.h>
+#import <OpenGL/CGLContext.h>
+
+#import "QDataTypes.h"
+#import "TGlobal.h"
+
+#import "THistory.h"
+#import "TSelection.h"
+#import "TVisibility.h"
+
+#import "TApplicationDelegate.h"
+#import "TFaceInspectorDelegate.h"
+#import "TEntityInspectorDelegate.h"
+#import "TPreferencesPanelDelegate.h"
+#import "TBuildInspectorDelegate.h"
+
+#import "TDlgRenameDelegate.h"
+
+#import "TPlane.h"
+
+#import "MAPWindow.h"
+#import "MAPDocument.h"
+
+#import "TFileWriter.h"
+#import "TWADWriter.h"
+#import "TLOGWriter.h"
+
+#import "TFileReader.h"
+#import "TDEFReader.h"
+#import "TWADReader.h"
+#import "TEMDLReader.h"
+#import "TSTLReader.h"
+#import "TOBJReader.h"
+#import "TPAKReader.h"
+#import "TCMPReader.h"
+
+#import "TEntityClass.h"
+#import "TEntity.h"
+#import "TMatrix.h"
+#import "TBrush.h"
+#import "TTriangleMesh.h"
+#import "TFace.h"
+#import "TEdge.h"
+#import "TEdgeFull.h"
+#import "TVec3D.h"
+#import "TEntity.h"
+#import "TTexture.h"
+
+#import "TBrushBuilderCube.h"
+#import "TBrushBuilderWedge.h"
+#import "TBrushBuilderCylinder.h"
+#import "TBrushBuilderSpike.h"
+
+#import "TRenderUtilBox.h"
+
+#import "TComponent.h"
+
+#import "TRenderComponent.h"
+#import "TRenderLevelTexturedComponent.h"
+#import "TRenderLevelOrthoComponent.h"
+#import "TRenderTextureBrowserComponent.h"
+
+#import "TEntityClassRenderComponent.h"
+#import "TEntityClassRenderComponentArrow.h"
+#import "TEntityClassRenderComponentMDL.h"
+#import "TEntityClassRenderComponentEMDL.h"
+
+#import "TRenderGridComponent.h"
+#import "TRenderGridOrthoComponent.h"
+
+#import "TProjComponent.h"
+#import "TOrthoProjComponent.h"
+#import "TTextureBrowserProjComponent.h"
+
+#import "TOpenGLVIew.h"
+#import "TLevelView.h"
+#import "TOrthoLevelView.h"
+#import "TTextureBrowserView.h"
+
+#import "ThreadedOperations.h"
+

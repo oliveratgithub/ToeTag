@@ -1,0 +1,365 @@
+TOETAG info_player_start
+{
+	arrow=true
+	mdl=id1/progs/player.mdl,0
+	editoronly=true
+}
+TOETAG info_player_deathmatch
+{
+	arrow=true
+	mdl=id1/progs/player.mdl,0
+	editoronly=true
+}
+TOETAG info_player_coop
+{
+	arrow=true
+	mdl=id1/progs/player.mdl,0
+	editoronly=true
+}
+TOETAG info_player_start2
+{
+	arrow=true
+	mdl=id1/progs/player.mdl,0
+	editoronly=true
+}
+TOETAG info_teleport_destination
+{
+	arrow=true
+	editoronly=true
+}
+TOETAG item_cells
+{
+	emodel=BSmallBattery:0,BLargeBattery:1
+}
+TOETAG item_rockets
+{
+	emodel=BSmallRockets:0,BLargeRockets:1
+}
+TOETAG item_shells
+{
+	emodel=BSmallShells:0,BLargeShells:1
+}
+TOETAG item_spikes
+{
+	emodel=BSmallNails:0,BLargeNails:1
+}
+TOETAG item_health
+{
+	emodel=BHealth:0,BRottedHealth:1,BMegaHealth:2
+}
+TOETAG item_artifact_envirosuit
+{
+	mdl=id1/progs/suit.mdl,0
+}
+TOETAG item_artifact_super_damage
+{
+	mdl=id1/progs/quaddama.mdl,0
+}
+TOETAG item_artifact_invulnerability
+{
+	mdl=id1/progs/invulner.mdl,0
+}
+TOETAG item_artifact_invisibility
+{
+	mdl=id1/progs/invisibl.mdl,0
+}
+TOETAG item_armor1
+{
+	mdl=id1/progs/armor.mdl,0
+}
+TOETAG item_armor2
+{
+	mdl=id1/progs/armor.mdl,1
+}
+TOETAG item_armorInv
+{
+	mdl=id1/progs/armor.mdl,2
+}
+TOETAG item_key1
+{
+	mdl=id1/progs/w_s_key.mdl,0
+}
+TOETAG item_key2
+	mdl=id1/progs/w_g_key.mdl,0
+}
+TOETAG item_sigil
+{
+	mdl=id1/progs/end1.mdl,0
+}
+TOETAG light_torch_small_walltorch
+{
+	mdl=id1/progs/flame.mdl,0
+}
+TOETAG light_flame_large_yellow
+{
+	mdl=id1/progs/flame2.mdl,0
+}
+TOETAG light_flame_small_yellow
+{
+	mdl=id1/progs/flame2.mdl,0
+}
+TOETAG light_flame_small_white
+{
+	mdl=id1/progs/flame2.mdl,0
+}
+TOETAG monster_enforcer
+{
+	mdl=id1/progs/enforcer.mdl,0
+	arrow=true
+}
+TOETAG monster_hell_knight
+{
+	arrow=true
+	mdl=id1/progs/hknight.mdl,0
+}
+TOETAG monster_army
+{
+	arrow=true
+	mdl=id1/progs/soldier.mdl,0
+}
+TOETAG monster_dog
+{
+	arrow=true
+	mdl=id1/progs/dog.mdl,0
+}
+TOETAG monster_ogre
+{
+	arrow=true
+	mdl=id1/progs/ogre.mdl,0
+}
+TOETAG monster_knight
+{
+	arrow=true
+	mdl=id1/progs/knight.mdl,0
+}
+TOETAG monster_zombie
+{
+	arrow=true
+	mdl=id1/progs/zombie.mdl,0
+}
+TOETAG monster_wizard
+{
+	arrow=true
+	mdl=id1/progs/wizard.mdl,0
+}
+TOETAG monster_demon1
+{
+	arrow=true
+	mdl=id1/progs/demon.mdl,0
+}
+TOETAG monster_oldone
+{
+	arrow=true
+	mdl=id1/progs/oldone.mdl,0
+}
+TOETAG monster_shambler
+{
+	arrow=true
+	mdl=id1/progs/shambler.mdl,0
+}
+TOETAG monster_shalrath
+{
+	arrow=true
+	mdl=id1/progs/shalrath.mdl,0
+}
+TOETAG monster_boss
+{
+	arrow=true
+	mdl=id1/progs/boss.mdl,0
+}
+TOETAG monster_tarbaby
+{
+	arrow=true
+	mdl=id1/progs/tarbaby.mdl,0
+}
+TOETAG monster_fish
+{
+	arrow=true
+	mdl=id1/progs/fish.mdl,0
+}
+TOETAG misc_teleporttrain
+{
+	mdl=id1/progs/teleport.mdl,0
+	editoronly=true
+}
+TOETAG misc_explobox
+	emodel=BLargeExplodingBox:0
+}
+TOETAG misc_explobox2
+	emodel=BSmallExplodingBox:0
+}
+TOETAG trap_spikeshooter
+{
+	arrow=true
+	editoronly=true
+}
+TOETAG trap_shooter
+{
+	arrow=true
+	editoronly=true
+}
+TOETAG trigger_monsterjump
+{
+	arrow=true
+	editoronly=true
+}
+TOETAG trigger_push
+{
+	arrow=true
+	editoronly=true
+}
+TOETAG viewthing
+{
+	mdl=id1/progs/player.mdl,0
+}
+TOETAG weapon_supershotgun
+{
+	mdl=id1/progs/g_shot.mdl,0
+}
+TOETAG weapon_nailgun
+	mdl=id1/progs/g_nail.mdl,0
+}
+TOETAG weapon_supernailgun
+{
+	mdl=id1/progs/g_nail2.mdl,0
+}
+TOETAG weapon_grenadelauncher
+{
+	mdl=id1/progs/g_rock.mdl,0
+}
+TOETAG weapon_rocketlauncher
+{
+	mdl=id1/progs/g_rock2.mdl,0
+}
+TOETAG weapon_lightning
+{
+	mdl=id1/progs/g_light.mdl,0
+}
+TOETAG air_bubbles
+{
+	editoronly=true
+}
+TOETAG ambient_light_buzz
+{
+	editoronly=true
+}
+TOETAG ambient_drip
+{
+	editoronly=true
+}
+TOETAG ambient_drone
+{
+	editoronly=true
+}
+TOETAG ambient_comp_hum
+{
+	editoronly=true
+}
+TOETAG ambient_flouro_buzz
+{
+	editoronly=true
+}
+TOETAG ambient_suck_wind
+{
+	editoronly=true
+}
+TOETAG ambient_swamp1
+{
+	editoronly=true
+}
+TOETAG ambient_swamp2
+{
+	editoronly=true
+}
+TOETAG ambient_thunder
+{
+	editoronly=true
+}
+TOETAG event_lightning
+{
+	editoronly=true
+}
+TOETAG info_null
+{
+	editoronly=true
+}
+TOETAG info_notnull
+{
+	editoronly=true
+}
+TOETAG info_intermission
+{
+	editoronly=true
+}
+TOETAG light
+{
+	editoronly=true
+}
+TOETAG light_fluoro
+{
+	editoronly=true
+}
+TOETAG light_fluorospark
+{
+	editoronly=true
+}
+TOETAG misc_noisemaker
+{
+	editoronly=true
+}
+TOETAG misc_fireball
+{
+	editoronly=true
+}
+TOETAG path_corner
+{
+	editoronly=true
+}
+TOETAG test_teleport
+{
+	editoronly=true
+}
+TOETAG test_fodder
+{
+	editoronly=true
+}
+TOETAG trigger_teleport
+{
+	editoronly=true
+}
+TOETAG trigger_changelevel
+{
+	editoronly=true
+}
+TOETAG trigger_setskill
+{
+	editoronly=true
+}
+TOETAG trigger_counter
+{
+	editoronly=true
+}
+TOETAG trigger_once
+{
+	editoronly=true
+}
+TOETAG trigger_multiple
+{
+	editoronly=true
+}
+TOETAG trigger_onlyregistered
+{
+	editoronly=true
+}
+TOETAG trigger_secret
+{
+	editoronly=true
+}
+TOETAG trigger_relay
+{
+	editoronly=true
+}
+TOETAG trigger_hurt
+{
+	editoronly=true
+}

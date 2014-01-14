@@ -1,0 +1,4 @@
+
+@implementation TComponent
+
+@end

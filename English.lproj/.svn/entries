@@ -1,0 +1,59 @@
+8
+
+dir
+10
+http://svn.fov120.com/ToeTag/trunk/English.lproj
+http://svn.fov120.com/ToeTag
+
+
+
+2008-07-20T14:34:48.921961Z
+10
+willem
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+5239bf2e-db32-461f-9a2e-c1d31a80badb
+
+InfoPlist.strings
+file
+
+
+
+
+2008-03-29T10:16:49.000000Z
+bf91496109bcffb8c5f86e4d11764b4e
+2008-03-15T12:46:30.236340Z
+1
+kristian
+has-props
+
+MainMenu.nib
+dir
+
+MAPDocument.nib
+dir
+
+Credits.rtf
+file
+
+
+
+
+2008-03-29T10:16:49.000000Z
+cf2ea09c940eaba03a224630dfaa46d3
+2008-03-15T12:46:30.236340Z
+1
+kristian
+
