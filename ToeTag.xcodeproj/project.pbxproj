@@ -3,19 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 44;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F1CBA6918889B3400A1234E /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1CBA6818889B3400A1234E /* Sparkle.framework */; };
+		7F3534AE1887EB91004BEA04 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 7F3534AD1887EB91004BEA04 /* dsa_pub.pem */; };
+		7F3B439518889C4600E1BB4A /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7F1CBA6818889B3400A1234E /* Sparkle.framework */; };
+		7F7FDC0C18868FF6000595FD /* Light in Resources */ = {isa = PBXBuildFile; fileRef = 7F7FDC0918868FF6000595FD /* Light */; };
+		7F7FDC0D18868FF6000595FD /* QBSP in Resources */ = {isa = PBXBuildFile; fileRef = 7F7FDC0A18868FF6000595FD /* QBSP */; };
+		7F7FDC0E18868FF6000595FD /* Vis in Resources */ = {isa = PBXBuildFile; fileRef = 7F7FDC0B18868FF6000595FD /* Vis */; };
 		8305B6E70D57267500364348 /* ThreadedOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 8305B6E60D57267500364348 /* ThreadedOperations.m */; };
 		830AEC9C0CE9B79D005CC888 /* quake.def in Resources */ = {isa = PBXBuildFile; fileRef = 830AEC9B0CE9B79D005CC888 /* quake.def */; };
 		830AEC9F0CE9B978005CC888 /* TDEFReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 830AEC9E0CE9B978005CC888 /* TDEFReader.m */; };
 		830AEE040CE9D403005CC888 /* TRenderUtilBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 830AEE030CE9D403005CC888 /* TRenderUtilBox.m */; };
 		830D8F710D2D039B00610A56 /* TEntityClassRenderComponentMDL.m in Sources */ = {isa = PBXBuildFile; fileRef = 830D8F6F0D2D039B00610A56 /* TEntityClassRenderComponentMDL.m */; };
 		830D91D30D2E522F00610A56 /* worldspawn.def in Resources */ = {isa = PBXBuildFile; fileRef = 830D91D20D2E522E00610A56 /* worldspawn.def */; };
-		8313EBEB0D232059005959BD /* QBSP in Resources */ = {isa = PBXBuildFile; fileRef = 8313EBEA0D232059005959BD /* QBSP */; };
-		8313EBF90D232095005959BD /* Light in Resources */ = {isa = PBXBuildFile; fileRef = 8313EBF70D232095005959BD /* Light */; };
-		8313EBFA0D232095005959BD /* Vis in Resources */ = {isa = PBXBuildFile; fileRef = 8313EBF80D232095005959BD /* Vis */; };
 		8313EC070D232154005959BD /* TPreferencesPanelDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8313EC050D232154005959BD /* TPreferencesPanelDelegate.m */; };
 		8313EC8C0D23BBFB005959BD /* TDlgRenameDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8313EC8A0D23BBFB005959BD /* TDlgRenameDelegate.m */; };
 		831528350D2045CF00C72057 /* TBrushBuilderCylinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 831528340D2045CF00C72057 /* TBrushBuilderCylinder.m */; };
@@ -43,8 +46,6 @@
 		83316F4F0CFF8D14001CBF2E /* TFaceInspectorDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83316F4E0CFF8D14001CBF2E /* TFaceInspectorDelegate.m */; };
 		8331CF4F0CDB3CC900A60239 /* TGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 8331CF4E0CDB3CC900A60239 /* TGlobal.m */; };
 		8331CFA70CDB475800A60239 /* QuakePalette.lmp in Resources */ = {isa = PBXBuildFile; fileRef = 8331CFA60CDB475800A60239 /* QuakePalette.lmp */; };
-		8346D2C40D31669300C07F3A /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8346D2C30D31669300C07F3A /* Sparkle.framework */; };
-		8346D2DB0D3166B100C07F3A /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8346D2C30D31669300C07F3A /* Sparkle.framework */; };
 		834FECEE0DC1F13C00C04259 /* TRenderLevelTexturedComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 834FECED0DC1F13C00C04259 /* TRenderLevelTexturedComponent.m */; };
 		835198A40D3B752A00BE8215 /* TLOGWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 835198A20D3B752A00BE8215 /* TLOGWriter.m */; };
 		835421BC0CEFAEFD002996F8 /* BLargeShells.MAP in Resources */ = {isa = PBXBuildFile; fileRef = 835421A60CEFAEFD002996F8 /* BLargeShells.MAP */; };
@@ -133,7 +134,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8346D2DB0D3166B100C07F3A /* Sparkle.framework in CopyFiles */,
+				7F3B439518889C4600E1BB4A /* Sparkle.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +153,11 @@
 		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32DBCF750370BD2300C91783 /* ToeTag_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToeTag_Prefix.pch; sourceTree = "<group>"; };
+		7F1CBA6818889B3400A1234E /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		7F3534AD1887EB91004BEA04 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = dsa_pub.pem; path = ../dsa_pub.pem; sourceTree = "<group>"; };
+		7F7FDC0918868FF6000595FD /* Light */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = Light; sourceTree = "<group>"; };
+		7F7FDC0A18868FF6000595FD /* QBSP */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = QBSP; sourceTree = "<group>"; };
+		7F7FDC0B18868FF6000595FD /* Vis */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = Vis; sourceTree = "<group>"; };
 		8305B6E50D57267500364348 /* ThreadedOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadedOperations.h; sourceTree = "<group>"; };
 		8305B6E60D57267500364348 /* ThreadedOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadedOperations.m; sourceTree = "<group>"; };
 		830AEC9B0CE9B79D005CC888 /* quake.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quake.def; sourceTree = "<group>"; };
@@ -162,9 +168,6 @@
 		830D8F6F0D2D039B00610A56 /* TEntityClassRenderComponentMDL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEntityClassRenderComponentMDL.m; sourceTree = "<group>"; };
 		830D8F700D2D039B00610A56 /* TEntityClassRenderComponentMDL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEntityClassRenderComponentMDL.h; sourceTree = "<group>"; };
 		830D91D20D2E522E00610A56 /* worldspawn.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = worldspawn.def; sourceTree = "<group>"; };
-		8313EBEA0D232059005959BD /* QBSP */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = QBSP; path = ../Quake/Tools/bin/QBSP; sourceTree = SOURCE_ROOT; };
-		8313EBF70D232095005959BD /* Light */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = Light; path = ../Quake/Tools/bin/Light; sourceTree = SOURCE_ROOT; };
-		8313EBF80D232095005959BD /* Vis */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = Vis; path = ../Quake/Tools/bin/Vis; sourceTree = SOURCE_ROOT; };
 		8313EC050D232154005959BD /* TPreferencesPanelDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPreferencesPanelDelegate.m; sourceTree = "<group>"; };
 		8313EC060D232154005959BD /* TPreferencesPanelDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPreferencesPanelDelegate.h; sourceTree = "<group>"; };
 		8313EC8A0D23BBFB005959BD /* TDlgRenameDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDlgRenameDelegate.m; sourceTree = "<group>"; };
@@ -215,7 +218,6 @@
 		8331CF4D0CDB3CC900A60239 /* TGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGlobal.h; sourceTree = "<group>"; };
 		8331CF4E0CDB3CC900A60239 /* TGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGlobal.m; sourceTree = "<group>"; };
 		8331CFA60CDB475800A60239 /* QuakePalette.lmp */ = {isa = PBXFileReference; lastKnownFileType = file; path = QuakePalette.lmp; sourceTree = "<group>"; };
-		8346D2C30D31669300C07F3A /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		834FECED0DC1F13C00C04259 /* TRenderLevelTexturedComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRenderLevelTexturedComponent.m; sourceTree = "<group>"; };
 		834FED040DC1F15100C04259 /* TRenderLevelTexturedComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRenderLevelTexturedComponent.h; sourceTree = "<group>"; };
 		835198A20D3B752A00BE8215 /* TLOGWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLOGWriter.m; sourceTree = "<group>"; };
@@ -329,8 +331,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */,
+				7F1CBA6918889B3400A1234E /* Sparkle.framework in Frameworks */,
 				83A3AEC90CD7C308002BA694 /* OpenGL.framework in Frameworks */,
-				8346D2C40D31669300C07F3A /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +342,7 @@
 		1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8346D2C30D31669300C07F3A /* Sparkle.framework */,
+				7F1CBA6818889B3400A1234E /* Sparkle.framework */,
 				83A3AEC80CD7C308002BA694 /* OpenGL.framework */,
 				1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */,
 			);
@@ -409,9 +411,10 @@
 		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7F3534AD1887EB91004BEA04 /* dsa_pub.pem */,
+				7F7FDC101886903D000595FD /* Tools */,
 				83740C420D4369FC007F76F3 /* Icons */,
 				8318E2D20D2BA6890052FF20 /* definitions */,
-				8313EBFC0D2320A2005959BD /* tools */,
 				839D53580D0578E300C1DBE1 /* DownArrow.png */,
 				839D53590D0578E300C1DBE1 /* UpArrow.png */,
 				83E490140CF0533900AE1306 /* Textures */,
@@ -433,6 +436,16 @@
 				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F7FDC101886903D000595FD /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				7F7FDC0918868FF6000595FD /* Light */,
+				7F7FDC0A18868FF6000595FD /* QBSP */,
+				7F7FDC0B18868FF6000595FD /* Vis */,
+			);
+			name = Tools;
 			sourceTree = "<group>";
 		};
 		8305B7530D573ACC00364348 /* Headers */ = {
@@ -505,16 +518,6 @@
 				830AEE030CE9D403005CC888 /* TRenderUtilBox.m */,
 			);
 			name = RenderUtils;
-			sourceTree = "<group>";
-		};
-		8313EBFC0D2320A2005959BD /* tools */ = {
-			isa = PBXGroup;
-			children = (
-				8313EBF70D232095005959BD /* Light */,
-				8313EBF80D232095005959BD /* Vis */,
-				8313EBEA0D232059005959BD /* QBSP */,
-			);
-			name = tools;
 			sourceTree = "<group>";
 		};
 		8318E2B30D2B9DDE0052FF20 /* EntityClassRender */ = {
@@ -749,9 +752,9 @@
 			buildConfigurationList = C05733C708A9546B00998B17 /* Build configuration list for PBXNativeTarget "ToeTag" */;
 			buildPhases = (
 				8D15AC2B0486D014006FF6A4 /* Resources */,
+				8346D2DF0D3166C100C07F3A /* CopyFiles */,
 				8D15AC300486D014006FF6A4 /* Sources */,
 				8D15AC330486D014006FF6A4 /* Frameworks */,
-				8346D2DF0D3166C100C07F3A /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -768,9 +771,16 @@
 /* Begin PBXProject section */
 		2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+			};
 			buildConfigurationList = C05733CB08A9546B00998B17 /* Build configuration list for PBXProject "ToeTag" */;
-			compatibilityVersion = "Xcode 3.0";
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* ToeTag */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -802,6 +812,7 @@
 				835421CC0CEFAEFD002996F8 /* BSmallNails.MAP in Resources */,
 				835421CD0CEFAEFD002996F8 /* BLargeNails.MAP in Resources */,
 				835421CF0CEFAEFD002996F8 /* BSmallRockets.MAP in Resources */,
+				7F7FDC0C18868FF6000595FD /* Light in Resources */,
 				835421D00CEFAEFD002996F8 /* BLargeRockets.MAP in Resources */,
 				835421D10CEFAEFD002996F8 /* BSmallShells.MAP in Resources */,
 				83E490300CF0534C00AE1306 /* +0_box_side.bmp in Resources */,
@@ -811,9 +822,12 @@
 				83E490340CF0534C00AE1306 /* +0_med100.bmp in Resources */,
 				83E490350CF0534C00AE1306 /* batt0sid.bmp in Resources */,
 				83E490360CF0534C00AE1306 /* batt0top.bmp in Resources */,
+				7F7FDC0E18868FF6000595FD /* Vis in Resources */,
 				83E490370CF0534C00AE1306 /* batt1sid.bmp in Resources */,
 				83E490380CF0534C00AE1306 /* batt1top.bmp in Resources */,
+				7F3534AE1887EB91004BEA04 /* dsa_pub.pem in Resources */,
 				83E490390CF0534C00AE1306 /* med3_0.bmp in Resources */,
+				7F7FDC0D18868FF6000595FD /* QBSP in Resources */,
 				83E4903A0CF0534C00AE1306 /* med3_1.bmp in Resources */,
 				83E4903B0CF0534C00AE1306 /* med100.bmp in Resources */,
 				83E4903C0CF0534C00AE1306 /* nail0sid.bmp in Resources */,
@@ -830,9 +844,6 @@
 				83E492740CF09D0B00AE1306 /* toetagdefault.bmp in Resources */,
 				839D535A0D0578E300C1DBE1 /* DownArrow.png in Resources */,
 				839D535B0D0578E300C1DBE1 /* UpArrow.png in Resources */,
-				8313EBEB0D232059005959BD /* QBSP in Resources */,
-				8313EBF90D232095005959BD /* Light in Resources */,
-				8313EBFA0D232095005959BD /* Vis in Resources */,
 				8318E2B20D2B9DBE0052FF20 /* ToeTag.cmp in Resources */,
 				830D91D30D2E522F00610A56 /* worldspawn.def in Resources */,
 				83740C4D0D436A0A007F76F3 /* Flag.png in Resources */,
@@ -952,30 +963,29 @@
 		83CA71A00D377E3700684254 /* Release with Profiling */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_PROFILING_CODE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PREBINDING = NO;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+				SDKROOT = macosx;
+				VALID_ARCHS = "i386 x86_64";
 			};
 			name = "Release with Profiling";
 		};
 		83CA71A10D377E3700684254 /* Release with Profiling */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/../../Sparkle/Extras/Source/build/Release\"",
+					"$(SRCROOT)/**",
 				);
 				GCC_DEBUGGING_SYMBOLS = full;
-				GCC_ENABLE_OBJC_GC = required;
+				GCC_ENABLE_OBJC_GC = supported;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -983,8 +993,11 @@
 				GENERATE_PROFILING_CODE = YES;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				OTHER_CFLAGS = "";
 				PRODUCT_NAME = ToeTag;
+				SDKROOT = macosx;
+				VALID_ARCHS = "i386 x86_64";
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
 			};
@@ -993,15 +1006,16 @@
 		C05733C808A9546B00998B17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/../../Sparkle/Extras/Source/build/Release\"",
+					"$(SRCROOT)/**",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_ENABLE_OBJC_GC = required;
+				GCC_ENABLE_OBJC_GC = supported;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1011,7 +1025,10 @@
 				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_PREPROCESSOR_DEFINITIONS = DEBUG;
 				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = ToeTag;
+				SDKROOT = macosx;
+				VALID_ARCHS = "i386 x86_64";
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
 			};
@@ -1020,16 +1037,16 @@
 		C05733C908A9546B00998B17 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/../../Sparkle/Extras/Source/build/Release\"",
+					"$(SRCROOT)/**",
 				);
 				GCC_AUTO_VECTORIZATION = YES;
 				GCC_DYNAMIC_NO_PIC = YES;
-				GCC_ENABLE_OBJC_GC = required;
+				GCC_ENABLE_OBJC_GC = supported;
 				GCC_ENABLE_SSE3_EXTENSIONS = YES;
 				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -1043,7 +1060,10 @@
 				GENERATE_PROFILING_CODE = NO;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = ToeTag;
+				SDKROOT = macosx;
+				VALID_ARCHS = "i386 x86_64";
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
 			};
@@ -1054,22 +1074,25 @@
 			buildSettings = {
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+				SDKROOT = macosx;
+				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Debug;
 		};
 		C05733CD08A9546B00998B17 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PREBINDING = NO;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+				SDKROOT = macosx;
+				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Release;
 		};

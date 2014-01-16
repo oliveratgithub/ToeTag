@@ -3,6 +3,8 @@
 
 @implementation TRenderArray
 
+
+
 -(id) initWithElementType:(ERenderArrayElementType)InType
 {
 	[super init];
@@ -305,6 +307,8 @@
 
 @implementation TGlobal
 
+@synthesize MDLTableOfContents;
+
 static TGlobal* GData = nil;
 
 -(id) init
@@ -330,23 +334,44 @@ static TGlobal* GData = nil;
 	LOG( @"Loading table of contents for MDLs" );
 	LOG_IN();
 	
-	MDLTableOfContents = [NSMutableDictionary new];
+	self.MDLTableOfContents = [NSMutableDictionary new];
 	
 	TPAKReader* pakreader = [TPAKReader new];
-	NSString* quakeDir = [[[NSUserDefaultsController sharedUserDefaultsController] values] valueForKey:@"quakeDirectory"];
+	NSString *quakeDir = [[[NSUserDefaultsController sharedUserDefaultsController] values] valueForKey:@"quakeDirectory"];
 	
-	[[NSFileManager defaultManager] directoryContentsAtPath:[NSString stringWithFormat:@"%@/%@", quakeDir, @"/*.PAK"]];
-	NSDirectoryEnumerator* dirEnum = [[NSFileManager defaultManager] enumeratorAtPath:[NSString stringWithFormat:@"%@/", quakeDir]];
-	
-	NSString* file;
-	while( file = [dirEnum nextObject] )
-	{
+//	[[NSFileManager defaultManager] directoryContentsAtPath:[NSString stringWithFormat:@"%@/%@", quakeDir, @"/*.PAK"]];
+    NSError *aError;
+    
+    NSString *folderPath = [[NSString stringWithFormat:@"%@/%@", quakeDir, @"id1"] stringByStandardizingPath];
+//    NSString *folderPath = [quakeDir stringByStandardizingPath];
+    NSLog(@"folderPath %@", folderPath);
+    
+    NSArray *contentsArray = [[NSFileManager defaultManager] contentsOfDirectoryAtPath: folderPath error:nil];
+
+    NSLog(@"folderPath %@ %@", folderPath, contentsArray);
+    
+    for (NSString *file in contentsArray)
+    {
 		if( [[[file uppercaseString] pathExtension] isEqualToString:@"PAK"] )
 		{
-			NSString* filename = [NSString stringWithFormat:@"%@/%@", quakeDir, file];
+			NSString* filename = [NSString stringWithFormat:@"%@id1/%@", quakeDir, file];
 			[pakreader loadMDLTableOfContents:filename Into:MDLTableOfContents];
 		}
-	}
+    }
+    
+    NSLog(@"MDLTableOfContents %@", MDLTableOfContents);
+    
+//	NSDirectoryEnumerator* dirEnum = [[NSFileManager defaultManager] enumeratorAtPath:[NSString stringWithFormat:@"%@/", quakeDir]];
+//	
+//	NSString* file;
+//	while( file = [dirEnum nextObject] )
+//	{
+//		if( [[[file uppercaseString] pathExtension] isEqualToString:@"PAK"] )
+//		{
+//			NSString* filename = [NSString stringWithFormat:@"%@/%@", quakeDir, file];
+//			[pakreader loadMDLTableOfContents:filename Into:MDLTableOfContents];
+//		}
+//	}
 	
 	LOG_OUT();
 }

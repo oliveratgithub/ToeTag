@@ -237,3 +237,4 @@ typedef enum
 
 #import "ThreadedOperations.h"
 
+#import <Sparkle/Sparkle.h>

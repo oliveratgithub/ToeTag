@@ -104,7 +104,7 @@
 				
 				LOG( @"MDL: %@ (skin: %d)", [subchunks objectAtIndex:0], ECRC->skinIdx );
 				
-				TMDLTocEntry* tocentry = [[TGlobal G]->MDLTableOfContents objectForKey:[subchunks objectAtIndex:0]];
+				TMDLTocEntry* tocentry = [[[TGlobal G] MDLTableOfContents] objectForKey:[subchunks objectAtIndex:0]];
 				
 				ECRC->skinIdx = [[subchunks objectAtIndex:1] intValue];
 				

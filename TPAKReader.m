@@ -1,6 +1,11 @@
 
 @implementation TPAKReader
 
+int LOG();
+int LOG_IN();
+int ERROR();
+int LOG_OUT();
+
 -(void) loadMDLTableOfContents:(NSString*)InFilename Into:(NSMutableDictionary*)InTableOfContents
 {
 	LOG( @"Reading PAK file table of contents: %@", InFilename );
@@ -16,12 +21,12 @@
 	}
 	
 	// Extract the name of the owner mod by grabbing the right chunk of the path
-	
 	NSArray* chunks = [InFilename componentsSeparatedByString:@"/"];
-	NSString* ownerMod = [chunks objectAtIndex:[chunks count] - 2];
+//	NSString* ownerMod = [chunks objectAtIndex:[chunks count] - 2];
+	NSString* ownerMod = [chunks objectAtIndex:[chunks count] - 1];
 	
+    
 	// Read the PAK header
-	
 	NSData* phdata = [fileHandle readDataOfLength:sizeof(pakheader_t)];
 	PAKHeader = (pakheader_t*)[phdata bytes];
 	
@@ -29,15 +34,15 @@
 	SWAPINT32( PAKHeader->dirsize );
 	
 	// Verify that this is a PAK file
-	
 	if( PAKHeader->magic[0] != 'P' && PAKHeader->magic[1] != 'A' && PAKHeader->magic[2] != 'C' && PAKHeader->magic[3] != 'K' )
 	{
 		[fileHandle closeFile];
 		return;
 	}
 	
-	// Read the table of contents
-	
+	/**
+     Read the table of contents of the PAK file
+    */
 	[fileHandle seekToFileOffset:PAKHeader->diroffset];
 	NSData* pedata = [fileHandle readDataOfLength:PAKHeader->dirsize];
 	PAKEntries = (pakentry_t*)[pedata bytes];
@@ -48,7 +53,9 @@
 	for( x = 0 ; x < numentries ; ++x )
 	{
 		pakentry_t* pakentry = &PAKEntries[x];
-		NSString* filename = [NSString stringWithUTF8String:pakentry->filename];
+        NSString* filename = [NSString stringWithUTF8String:pakentry->filename];
+        //NSString* filename = [NSString stringWithFormat:@"%s" , pakentry->filename];
+        NSLog(@"%@", filename);
 		
 		// We only care about MDL files so filter on that extension.
 		

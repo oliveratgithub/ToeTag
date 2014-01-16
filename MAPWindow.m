@@ -114,9 +114,12 @@
 	
 	[mapwindow OnShowBuildInspector:nil];
 	
-	NSString *BSP_Filename = [NSString stringWithFormat:@"%@/QBSP", [[NSBundle mainBundle] resourcePath]];
+	/*NSString *BSP_Filename = [NSString stringWithFormat:@"%@/QBSP", [[NSBundle mainBundle] resourcePath]];
 	NSString *LIGHT_Filename = [NSString stringWithFormat:@"%@/LIGHT", [[NSBundle mainBundle] resourcePath]];
-	NSString *VIS_Filename = [NSString stringWithFormat:@"%@/VIS", [[NSBundle mainBundle] resourcePath]];
+	NSString *VIS_Filename = [NSString stringWithFormat:@"%@/VIS", [[NSBundle mainBundle] resourcePath]];*/
+    NSString *BSP_Filename = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"@QBSP"] ofType:nil];
+	NSString *LIGHT_Filename = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"@Light"] ofType:nil];
+	NSString *VIS_Filename = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"@Vis"] ofType:nil];
 
 	// Create a game directory to pass to the compiling tools
 	
@@ -279,7 +282,8 @@
 -(NSString*) runTask:(NSString*)InApp UseBSPFile:(BOOL)bUseBSPFile Args:(NSArray*)InArgs
 {
 	MAPDocument* map = [[NSDocumentController sharedDocumentController] currentDocument];
-	NSString* mapURL = [[map fileName] mutableCopy];
+//	NSString* mapURL = [[map URL] mutableCopy];
+	NSURL* mapURL = [map fileURL];
 	
 	// If this tool operates on the BSP file rather than the MAP, pass that filename instead
 	

@@ -125,7 +125,7 @@
 	
 	// Table of contents for all PAK files in the Quake directory.  These will be loaded as they are
 	// requested by entity class render components.
-	NSMutableDictionary* MDLTableOfContents;
+
 	
 	// Temp objects
 	TVec3D *colorWhite, *colorBlack, *colorLtGray, *colorMedGray, *colorDkGray, *colorSelectedBrush, *colorSelectedBrushHalf;
@@ -172,6 +172,8 @@
 +(int) findClosestPowerOfTwo:(int)InValue;
 +(int) findBestPowerOfTwo:(int)InValue;
 +(MAPDocument*) getMAP;
-+(void) logOpenGLErrors;
++(void) _logOpenGLErrors;
+
+@property (nonatomic, retain) 	NSMutableDictionary *MDLTableOfContents;
 
 @end
