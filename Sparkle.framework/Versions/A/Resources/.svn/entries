@@ -1,121 +1,0 @@
-8
-
-dir
-10
-http://svn.fov120.com/ToeTag/trunk/Sparkle.framework/Versions/A/Resources
-http://svn.fov120.com/ToeTag
-
-
-
-2008-03-15T12:46:30.236340Z
-1
-kristian
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-5239bf2e-db32-461f-9a2e-c1d31a80badb
-
-ja.lproj
-dir
-
-zh_TW.lproj
-dir
-
-id.lproj
-dir
-
-he.lproj
-dir
-
-fi.lproj
-dir
-
-Info.plist
-file
-
-
-
-
-2008-03-29T10:16:46.000000Z
-692d2d98dfbb02c7411f8ae065a62769
-2008-03-15T12:46:30.236340Z
-1
-kristian
-
-zh_CN.lproj
-dir
-
-en.lproj
-dir
-
-cs.lproj
-dir
-
-fr.lproj
-dir
-
-es.lproj
-dir
-
-ko.lproj
-dir
-
-nl.lproj
-dir
-
-cy.lproj
-dir
-
-pl.lproj
-dir
-
-is.lproj
-dir
-
-th.lproj
-dir
-
-it.lproj
-dir
-
-hu.lproj
-dir
-
-no.lproj
-dir
-
-SUStatus.nib
-dir
-
-sk.lproj
-dir
-
-ca.lproj
-dir
-
-da.lproj
-dir
-
-tr.lproj
-dir
-
-ru.lproj
-dir
-
-de.lproj
-dir
-
-sv.lproj
-dir
-
