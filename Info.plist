@@ -52,6 +52,6 @@
 	<key>SUFeedURL</key>
 	<string>http://www.wantonhubris.com/toetag/appcast/ToeTagVersionsNew.xml</string>
 	<key>SUPublicDSAKeyFile</key>
-	<string>dsa_pub.pem</string>
+	<string>sparkle_dsakeyfile.pem</string>
 </dict>
 </plist>

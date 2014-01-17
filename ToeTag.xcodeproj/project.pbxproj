@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		7F1CBA6918889B3400A1234E /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1CBA6818889B3400A1234E /* Sparkle.framework */; };
-		7F3534AE1887EB91004BEA04 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 7F3534AD1887EB91004BEA04 /* dsa_pub.pem */; };
 		7F3B439518889C4600E1BB4A /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7F1CBA6818889B3400A1234E /* Sparkle.framework */; };
 		7F7FDC0C18868FF6000595FD /* Light in Resources */ = {isa = PBXBuildFile; fileRef = 7F7FDC0918868FF6000595FD /* Light */; };
 		7F7FDC0D18868FF6000595FD /* QBSP in Resources */ = {isa = PBXBuildFile; fileRef = 7F7FDC0A18868FF6000595FD /* QBSP */; };
 		7F7FDC0E18868FF6000595FD /* Vis in Resources */ = {isa = PBXBuildFile; fileRef = 7F7FDC0B18868FF6000595FD /* Vis */; };
+		7FF84C4718893818000E6454 /* sparkle_dsakeyfile.pem in Resources */ = {isa = PBXBuildFile; fileRef = 7FF84C4618893818000E6454 /* sparkle_dsakeyfile.pem */; };
 		8305B6E70D57267500364348 /* ThreadedOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 8305B6E60D57267500364348 /* ThreadedOperations.m */; };
 		830AEC9C0CE9B79D005CC888 /* quake.def in Resources */ = {isa = PBXBuildFile; fileRef = 830AEC9B0CE9B79D005CC888 /* quake.def */; };
 		830AEC9F0CE9B978005CC888 /* TDEFReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 830AEC9E0CE9B978005CC888 /* TDEFReader.m */; };
@@ -154,10 +154,10 @@
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32DBCF750370BD2300C91783 /* ToeTag_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToeTag_Prefix.pch; sourceTree = "<group>"; };
 		7F1CBA6818889B3400A1234E /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
-		7F3534AD1887EB91004BEA04 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = dsa_pub.pem; path = ../dsa_pub.pem; sourceTree = "<group>"; };
 		7F7FDC0918868FF6000595FD /* Light */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = Light; sourceTree = "<group>"; };
 		7F7FDC0A18868FF6000595FD /* QBSP */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = QBSP; sourceTree = "<group>"; };
 		7F7FDC0B18868FF6000595FD /* Vis */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = Vis; sourceTree = "<group>"; };
+		7FF84C4618893818000E6454 /* sparkle_dsakeyfile.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sparkle_dsakeyfile.pem; sourceTree = "<group>"; };
 		8305B6E50D57267500364348 /* ThreadedOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadedOperations.h; sourceTree = "<group>"; };
 		8305B6E60D57267500364348 /* ThreadedOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadedOperations.m; sourceTree = "<group>"; };
 		830AEC9B0CE9B79D005CC888 /* quake.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quake.def; sourceTree = "<group>"; };
@@ -411,7 +411,7 @@
 		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				7F3534AD1887EB91004BEA04 /* dsa_pub.pem */,
+				7FF84C4618893818000E6454 /* sparkle_dsakeyfile.pem */,
 				7F7FDC101886903D000595FD /* Tools */,
 				83740C420D4369FC007F76F3 /* Icons */,
 				8318E2D20D2BA6890052FF20 /* definitions */,
@@ -825,7 +825,6 @@
 				7F7FDC0E18868FF6000595FD /* Vis in Resources */,
 				83E490370CF0534C00AE1306 /* batt1sid.bmp in Resources */,
 				83E490380CF0534C00AE1306 /* batt1top.bmp in Resources */,
-				7F3534AE1887EB91004BEA04 /* dsa_pub.pem in Resources */,
 				83E490390CF0534C00AE1306 /* med3_0.bmp in Resources */,
 				7F7FDC0D18868FF6000595FD /* QBSP in Resources */,
 				83E4903A0CF0534C00AE1306 /* med3_1.bmp in Resources */,
@@ -850,6 +849,7 @@
 				83740C4E0D436A0A007F76F3 /* Flag_1.png in Resources */,
 				83740C4F0D436A0A007F76F3 /* Flag_3.png in Resources */,
 				832E097D0D529D0400305B3D /* ToeTagLogo.icns in Resources */,
+				7FF84C4718893818000E6454 /* sparkle_dsakeyfile.pem in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
