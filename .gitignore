@@ -23,6 +23,7 @@ DerivedData
 *.hmap
 *.xccheckout
 *.ipa
+*.xcworkspace
 
 # CocoaPods
 Pods
