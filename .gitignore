@@ -1,5 +1,11 @@
-# Xcode
+# OS X
 .DS_Store
+.Trashes
+*.swp
+*.lock
+
+
+# Xcode
 */build/*
 *.pbxuser
 !default.pbxuser
@@ -16,6 +22,10 @@ DerivedData
 .idea/
 *.hmap
 *.xccheckout
+*.ipa
 
-#CocoaPods
+# CocoaPods
 Pods
+
+# Documentation/Generated
+doxygenWarnings.txt
