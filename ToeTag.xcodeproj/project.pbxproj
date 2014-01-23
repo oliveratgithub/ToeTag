@@ -12,6 +12,9 @@
 		7F7FDC0C18868FF6000595FD /* Light in Resources */ = {isa = PBXBuildFile; fileRef = 7F7FDC0918868FF6000595FD /* Light */; };
 		7F7FDC0D18868FF6000595FD /* QBSP in Resources */ = {isa = PBXBuildFile; fileRef = 7F7FDC0A18868FF6000595FD /* QBSP */; };
 		7F7FDC0E18868FF6000595FD /* Vis in Resources */ = {isa = PBXBuildFile; fileRef = 7F7FDC0B18868FF6000595FD /* Vis */; };
+		7FF33C361891BA5B002D156F /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 7FF33C341891BA5B002D156F /* MainMenu.nib */; };
+		7FF33C371891BA5B002D156F /* MAPDocument.nib in Resources */ = {isa = PBXBuildFile; fileRef = 7FF33C351891BA5B002D156F /* MAPDocument.nib */; };
+		7FF33C3E1891D90B002D156F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D15AC360486D014006FF6A4 /* Info.plist */; };
 		7FF84C4718893818000E6454 /* sparkle_dsakeyfile.pem in Resources */ = {isa = PBXBuildFile; fileRef = 7FF84C4618893818000E6454 /* sparkle_dsakeyfile.pem */; };
 		8305B6E70D57267500364348 /* ThreadedOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 8305B6E60D57267500364348 /* ThreadedOperations.m */; };
 		830AEC9C0CE9B79D005CC888 /* quake.def in Resources */ = {isa = PBXBuildFile; fileRef = 830AEC9B0CE9B79D005CC888 /* quake.def */; };
@@ -119,8 +122,6 @@
 		83F194720D38E2DC005F0830 /* TEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F194700D38E2DC005F0830 /* TEdge.m */; };
 		83FD1DE80CF795E400B96598 /* THistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 83FD1DE70CF795E400B96598 /* THistory.m */; };
 		8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
-		8D15AC2D0486D014006FF6A4 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */; };
-		8D15AC2E0486D014006FF6A4 /* MAPDocument.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B4FDCFA73011CA2CEA /* MAPDocument.nib */; };
 		8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
 		8D15AC310486D014006FF6A4 /* MAPDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4ACFDCFA73011CA2CEA /* MAPDocument.m */; settings = {ATTRIBUTES = (); }; };
 		8D15AC320486D014006FF6A4 /* ToeTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* ToeTag.m */; settings = {ATTRIBUTES = (); }; };
@@ -144,20 +145,21 @@
 		089C1660FE840EACC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		13E42FBA07B3F13500E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
-		2A37F4ACFDCFA73011CA2CEA /* MAPDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAPDocument.m; sourceTree = "<group>"; };
-		2A37F4AEFDCFA73011CA2CEA /* MAPDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAPDocument.h; sourceTree = "<group>"; };
-		2A37F4B0FDCFA73011CA2CEA /* ToeTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToeTag.m; sourceTree = "<group>"; };
-		2A37F4B5FDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MAPDocument.nib; sourceTree = "<group>"; };
-		2A37F4B7FDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		2A37F4ACFDCFA73011CA2CEA /* MAPDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MAPDocument.m; path = Controllers/MAPDocument.m; sourceTree = "<group>"; };
+		2A37F4AEFDCFA73011CA2CEA /* MAPDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MAPDocument.h; path = Controllers/MAPDocument.h; sourceTree = "<group>"; };
+		2A37F4B0FDCFA73011CA2CEA /* ToeTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ToeTag.m; path = ../Application/ToeTag.m; sourceTree = "<group>"; };
 		2A37F4BAFDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
 		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		32DBCF750370BD2300C91783 /* ToeTag_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToeTag_Prefix.pch; sourceTree = "<group>"; };
-		7F1CBA6818889B3400A1234E /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		32DBCF750370BD2300C91783 /* ToeTag_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ToeTag_Prefix.pch; path = ../Application/ToeTag_Prefix.pch; sourceTree = "<group>"; };
+		7F1CBA6818889B3400A1234E /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Vendors/Sparkle/Sparkle.framework; sourceTree = "<group>"; };
 		7F7FDC0918868FF6000595FD /* Light */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = Light; sourceTree = "<group>"; };
 		7F7FDC0A18868FF6000595FD /* QBSP */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = QBSP; sourceTree = "<group>"; };
 		7F7FDC0B18868FF6000595FD /* Vis */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = Vis; sourceTree = "<group>"; };
-		7FF84C4618893818000E6454 /* sparkle_dsakeyfile.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sparkle_dsakeyfile.pem; sourceTree = "<group>"; };
+		7F9609EE1891DC6600CFFC6B /* TBuildInspectorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBuildInspectorDelegate.h; sourceTree = "<group>"; };
+		7FF33C341891BA5B002D156F /* MainMenu.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = MainMenu.nib; path = Controllers/MainMenu.nib; sourceTree = "<group>"; };
+		7FF33C351891BA5B002D156F /* MAPDocument.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = MAPDocument.nib; path = Controllers/MAPDocument.nib; sourceTree = "<group>"; };
+		7FF84C4618893818000E6454 /* sparkle_dsakeyfile.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = sparkle_dsakeyfile.pem; path = Vendors/Sparkle/sparkle_dsakeyfile.pem; sourceTree = "<group>"; };
 		8305B6E50D57267500364348 /* ThreadedOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadedOperations.h; sourceTree = "<group>"; };
 		8305B6E60D57267500364348 /* ThreadedOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadedOperations.m; sourceTree = "<group>"; };
 		830AEC9B0CE9B79D005CC888 /* quake.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quake.def; sourceTree = "<group>"; };
@@ -198,13 +200,13 @@
 		832031F30D301CB40072C3EE /* TEntityClassRenderComponentEMDL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEntityClassRenderComponentEMDL.m; sourceTree = "<group>"; };
 		832222290D15CDA200131448 /* TBrushBuilderWedge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBrushBuilderWedge.h; sourceTree = "<group>"; };
 		8322222A0D15CDA200131448 /* TBrushBuilderWedge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBrushBuilderWedge.m; sourceTree = "<group>"; };
-		8324920F0D02CAB2005C1AD3 /* MAPWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAPWindow.h; sourceTree = "<group>"; };
-		832492100D02CAB2005C1AD3 /* MAPWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAPWindow.m; sourceTree = "<group>"; };
+		8324920F0D02CAB2005C1AD3 /* MAPWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MAPWindow.h; path = Controllers/MAPWindow.h; sourceTree = "<group>"; };
+		832492100D02CAB2005C1AD3 /* MAPWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MAPWindow.m; path = Controllers/MAPWindow.m; sourceTree = "<group>"; };
 		8324929C0D02D5DB005C1AD3 /* TEntityInspectorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEntityInspectorDelegate.h; sourceTree = "<group>"; };
 		8324929D0D02D5DB005C1AD3 /* TEntityInspectorDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEntityInspectorDelegate.m; sourceTree = "<group>"; };
 		832CD6040CD7E3B8003849D6 /* TRenderComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRenderComponent.m; sourceTree = "<group>"; };
 		832CD6050CD7E3B8003849D6 /* TRenderComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRenderComponent.h; sourceTree = "<group>"; };
-		832CD6060CD7E3B8003849D6 /* TComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TComponent.m; sourceTree = "<group>"; };
+		832CD6060CD7E3B8003849D6 /* TComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TComponent.m; path = Components/TComponent.m; sourceTree = "<group>"; };
 		832CD6070CD7E3B8003849D6 /* TComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TComponent.h; sourceTree = "<group>"; };
 		832CD6840CD7EE7B003849D6 /* TProjComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TProjComponent.m; sourceTree = "<group>"; };
 		832CD6850CD7EE7B003849D6 /* TOrthoProjComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOrthoProjComponent.h; sourceTree = "<group>"; };
@@ -321,7 +323,7 @@
 		83F194710D38E2DC005F0830 /* TEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEdge.h; sourceTree = "<group>"; };
 		83FD1DE60CF795E400B96598 /* THistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THistory.h; sourceTree = "<group>"; };
 		83FD1DE70CF795E400B96598 /* THistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THistory.m; sourceTree = "<group>"; };
-		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
 		8D15AC370486D014006FF6A4 /* ToeTag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToeTag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -342,6 +344,7 @@
 		1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7FF84C4618893818000E6454 /* sparkle_dsakeyfile.pem */,
 				7F1CBA6818889B3400A1234E /* Sparkle.framework */,
 				83A3AEC80CD7C308002BA694 /* OpenGL.framework */,
 				1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */,
@@ -370,61 +373,45 @@
 		2A37F4AAFDCFA73011CA2CEA /* ToeTag */ = {
 			isa = PBXGroup;
 			children = (
-				2A37F4ABFDCFA73011CA2CEA /* Classes */,
-				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
+				7FF33C3D1891CFCD002D156F /* Application */,
+				7FF33C381891BA92002D156F /* Controllers */,
+				8305B7530D573ACC00364348 /* Headers */,
+				2A37F4ABFDCFA73011CA2CEA /* Models */,
 				2A37F4B8FDCFA73011CA2CEA /* Resources */,
 				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
 				19C28FB0FE9D524F11CA2CBB /* Products */,
 			);
 			name = ToeTag;
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
-		2A37F4ABFDCFA73011CA2CEA /* Classes */ = {
+		2A37F4ABFDCFA73011CA2CEA /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				83F362430D24728D0088E2AB /* Delegates */,
-				830AEE010CE9D3E5005CC888 /* RenderUtils */,
+				8331CF4E0CDB3CC900A60239 /* TGlobal.m */,
+				8305B6E60D57267500364348 /* ThreadedOperations.m */,
 				83DCC0900CDFF11B005B80DC /* BrushBuilders */,
+				83A3AEFF0CD7DA97002BA694 /* Components */,
 				8392730A0CD7BF07009105FA /* Core */,
 				83EF62C00CD8AB8100C3EEB1 /* Files */,
-				83A3AEFF0CD7DA97002BA694 /* Components */,
-				8392730B0CD7BF14009105FA /* OpenGL */,
-				2A37F4ACFDCFA73011CA2CEA /* MAPDocument.m */,
-				832492100D02CAB2005C1AD3 /* MAPWindow.m */,
-				8305B6E60D57267500364348 /* ThreadedOperations.m */,
-				8331CF4E0CDB3CC900A60239 /* TGlobal.m */,
 				83B1BE180D1EA0D300DDB438 /* Managers */,
+				8392730B0CD7BF14009105FA /* OpenGL */,
+				830AEE010CE9D3E5005CC888 /* RenderUtils */,
 			);
-			name = Classes;
-			sourceTree = "<group>";
-		};
-		2A37F4AFFDCFA73011CA2CEA /* Other Sources */ = {
-			isa = PBXGroup;
-			children = (
-				8305B7530D573ACC00364348 /* Headers */,
-				2A37F4B0FDCFA73011CA2CEA /* ToeTag.m */,
-				32DBCF750370BD2300C91783 /* ToeTag_Prefix.pch */,
-			);
-			name = "Other Sources";
+			path = Models;
 			sourceTree = "<group>";
 		};
 		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				7FF84C4618893818000E6454 /* sparkle_dsakeyfile.pem */,
-				7F7FDC101886903D000595FD /* Tools */,
-				83740C420D4369FC007F76F3 /* Icons */,
-				8318E2D20D2BA6890052FF20 /* definitions */,
-				839D53580D0578E300C1DBE1 /* DownArrow.png */,
-				839D53590D0578E300C1DBE1 /* UpArrow.png */,
-				83E490140CF0533900AE1306 /* Textures */,
-				8354218E0CEFAEEA002996F8 /* Items */,
-				8331CFA60CDB475800A60239 /* QuakePalette.lmp */,
 				2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */,
-				2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */,
-				2A37F4B4FDCFA73011CA2CEA /* MAPDocument.nib */,
 				8D15AC360486D014006FF6A4 /* Info.plist */,
 				089C165FFE840EACC02AAC07 /* InfoPlist.strings */,
+				8318E2D20D2BA6890052FF20 /* Definitions */,
+				83740C420D4369FC007F76F3 /* Icons */,
+				8354218E0CEFAEEA002996F8 /* Items */,
+				83E490140CF0533900AE1306 /* Textures */,
+				7F7FDC101886903D000595FD /* Tools */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -446,70 +433,96 @@
 				7F7FDC0B18868FF6000595FD /* Vis */,
 			);
 			name = Tools;
+			path = Resources/Tools;
+			sourceTree = "<group>";
+		};
+		7FF33C381891BA92002D156F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7FF33C341891BA5B002D156F /* MainMenu.nib */,
+				8324920F0D02CAB2005C1AD3 /* MAPWindow.h */,
+				832492100D02CAB2005C1AD3 /* MAPWindow.m */,
+				7FF33C351891BA5B002D156F /* MAPDocument.nib */,
+				2A37F4AEFDCFA73011CA2CEA /* MAPDocument.h */,
+				2A37F4ACFDCFA73011CA2CEA /* MAPDocument.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		7FF33C3D1891CFCD002D156F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4B0FDCFA73011CA2CEA /* ToeTag.m */,
+				32DBCF750370BD2300C91783 /* ToeTag_Prefix.pch */,
+				83F362430D24728D0088E2AB /* Delegates */,
+			);
+			name = Application;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		8305B7530D573ACC00364348 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				836101C20E83B74A0020CC24 /* TDlgRenameDelegate.h */,
-				83A310420E45C2F8001DB45B /* TEdgeFull.h */,
-				83968E930DE6D85500C87933 /* TOBJReader.h */,
-				8399976A0DD1B46100E74609 /* TSTLReader.h */,
-				8399974A0DD077CA00E74609 /* TTriangleMesh.h */,
-				834FED040DC1F15100C04259 /* TRenderLevelTexturedComponent.h */,
-				83AA1B1C0D4F410700A8CCAD /* QuickLook.h */,
-				83B1BE2E0D1EA0FE00DDB438 /* TVisibility.h */,
-				8355CBD40CF49284008BA0CD /* TSelection.h */,
-				83FD1DE60CF795E400B96598 /* THistory.h */,
-				832CD6070CD7E3B8003849D6 /* TComponent.h */,
-				83A3AF870CD7DD87002BA694 /* TLevelView.h */,
-				83A3AF850CD7DD87002BA694 /* TOrthoLevelView.h */,
-				83A3AF570CD7DB7F002BA694 /* TTextureBrowserView.h */,
-				839272BA0CD7B3AB009105FA /* TOpenGLView.h */,
-				2A37F4AEFDCFA73011CA2CEA /* MAPDocument.h */,
-				8324920F0D02CAB2005C1AD3 /* MAPWindow.h */,
-				8305B6E50D57267500364348 /* ThreadedOperations.h */,
-				8331CF4D0CDB3CC900A60239 /* TGlobal.h */,
-				832031F20D301CB40072C3EE /* TEntityClassRenderComponentEMDL.h */,
-				8318E2CB0D2B9F610052FF20 /* TEntityClassRenderComponentArrow.h */,
-				830D8F700D2D039B00610A56 /* TEntityClassRenderComponentMDL.h */,
-				8318E2C00D2B9E140052FF20 /* TEntityClassRenderComponent.h */,
-				83DCBFF90CDFEA6F005B80DC /* TRenderLevelOrthoComponent.h */,
-				832CD6EB0CD7F202003849D6 /* TRenderTextureBrowserComponent.h */,
-				832CD6050CD7E3B8003849D6 /* TRenderComponent.h */,
+				7F9609EE1891DC6600CFFC6B /* TBuildInspectorDelegate.h */,
 				83EF62BE0CD8AB3D00C3EEB1 /* QDataTypes.h */,
-				8318E2010D2AD9790052FF20 /* TTexture.h */,
-				8318E1D10D2A65660052FF20 /* TEntityClass.h */,
-				8318E1BA0D2A63A30052FF20 /* TMatrix.h */,
-				8318E1BC0D2A63A30052FF20 /* TPlane.h */,
-				8318E1BE0D2A63A30052FF20 /* TVec3D.h */,
-				83F194710D38E2DC005F0830 /* TEdge.h */,
-				8318E1B80D2A63610052FF20 /* TFace.h */,
-				83B471BF0CDC7C9400A8F7BA /* TEntity.h */,
-				8318E1B40D2A634E0052FF20 /* TBrush.h */,
-				835198A30D3B752A00BE8215 /* TLOGWriter.h */,
-				83C0893B0D114236000FAD20 /* TFileWriter.h */,
-				83C089380D114208000FAD20 /* TWADWriter.h */,
-				83BC05BB0D2BAE7500D558E2 /* TCMPReader.h */,
-				83E492940CF0A63200AE1306 /* TEMDLReader.h */,
-				83DEEF5F0CEF0DD50089C411 /* TPAKReader.h */,
-				83EF62C10CD8AB9A00C3EEB1 /* TFileReader.h */,
-				83EF62C40CD8ABCE00C3EEB1 /* TWADReader.h */,
-				830AEC9D0CE9B978005CC888 /* TDEFReader.h */,
-				832CD6870CD7EE7B003849D6 /* TProjComponent.h */,
-				832CD6850CD7EE7B003849D6 /* TOrthoProjComponent.h */,
-				83CA92440CDA418400490DD3 /* TTextureBrowserProjComponent.h */,
-				8313EC060D232154005959BD /* TPreferencesPanelDelegate.h */,
+				83AA1B1C0D4F410700A8CCAD /* QuickLook.h */,
 				83B4728F0CDC94C700A8F7BA /* TApplicationDelegate.h */,
-				8324929C0D02D5DB005C1AD3 /* TEntityInspectorDelegate.h */,
-				83316F4D0CFF8D14001CBF2E /* TFaceInspectorDelegate.h */,
-				830AEE020CE9D403005CC888 /* TRenderUtilBox.h */,
-				831528AA0D205DE400C72057 /* TBrushBuilderSpike.h */,
-				831528330D2045CF00C72057 /* TBrushBuilderCylinder.h */,
-				832222290D15CDA200131448 /* TBrushBuilderWedge.h */,
+				8318E1B40D2A634E0052FF20 /* TBrush.h */,
 				83DCC0950CE07EE3005B80DC /* TBrushBuilderCube.h */,
+				831528330D2045CF00C72057 /* TBrushBuilderCylinder.h */,
+				831528AA0D205DE400C72057 /* TBrushBuilderSpike.h */,
+				832222290D15CDA200131448 /* TBrushBuilderWedge.h */,
+				83BC05BB0D2BAE7500D558E2 /* TCMPReader.h */,
+				832CD6070CD7E3B8003849D6 /* TComponent.h */,
+				830AEC9D0CE9B978005CC888 /* TDEFReader.h */,
+				836101C20E83B74A0020CC24 /* TDlgRenameDelegate.h */,
+				83F194710D38E2DC005F0830 /* TEdge.h */,
+				83A310420E45C2F8001DB45B /* TEdgeFull.h */,
+				83E492940CF0A63200AE1306 /* TEMDLReader.h */,
+				83B471BF0CDC7C9400A8F7BA /* TEntity.h */,
+				8318E1D10D2A65660052FF20 /* TEntityClass.h */,
+				8318E2C00D2B9E140052FF20 /* TEntityClassRenderComponent.h */,
+				8318E2CB0D2B9F610052FF20 /* TEntityClassRenderComponentArrow.h */,
+				832031F20D301CB40072C3EE /* TEntityClassRenderComponentEMDL.h */,
+				830D8F700D2D039B00610A56 /* TEntityClassRenderComponentMDL.h */,
+				8324929C0D02D5DB005C1AD3 /* TEntityInspectorDelegate.h */,
+				8318E1B80D2A63610052FF20 /* TFace.h */,
+				83316F4D0CFF8D14001CBF2E /* TFaceInspectorDelegate.h */,
+				83EF62C10CD8AB9A00C3EEB1 /* TFileReader.h */,
+				83C0893B0D114236000FAD20 /* TFileWriter.h */,
+				8331CF4D0CDB3CC900A60239 /* TGlobal.h */,
+				83FD1DE60CF795E400B96598 /* THistory.h */,
+				8305B6E50D57267500364348 /* ThreadedOperations.h */,
+				83A3AF870CD7DD87002BA694 /* TLevelView.h */,
+				835198A30D3B752A00BE8215 /* TLOGWriter.h */,
+				8318E1BA0D2A63A30052FF20 /* TMatrix.h */,
+				83968E930DE6D85500C87933 /* TOBJReader.h */,
+				839272BA0CD7B3AB009105FA /* TOpenGLView.h */,
+				83A3AF850CD7DD87002BA694 /* TOrthoLevelView.h */,
+				832CD6850CD7EE7B003849D6 /* TOrthoProjComponent.h */,
+				83DEEF5F0CEF0DD50089C411 /* TPAKReader.h */,
+				8318E1BC0D2A63A30052FF20 /* TPlane.h */,
+				8313EC060D232154005959BD /* TPreferencesPanelDelegate.h */,
+				832CD6870CD7EE7B003849D6 /* TProjComponent.h */,
+				832CD6050CD7E3B8003849D6 /* TRenderComponent.h */,
+				83DCC0BB0CE08BCA005B80DC /* TRenderGridComponent.h */,
+				83E2E96C0CE8727900CFC2BB /* TRenderGridOrthoComponent.h */,
+				83DCBFF90CDFEA6F005B80DC /* TRenderLevelOrthoComponent.h */,
+				834FED040DC1F15100C04259 /* TRenderLevelTexturedComponent.h */,
+				832CD6EB0CD7F202003849D6 /* TRenderTextureBrowserComponent.h */,
+				830AEE020CE9D403005CC888 /* TRenderUtilBox.h */,
+				8355CBD40CF49284008BA0CD /* TSelection.h */,
+				8399976A0DD1B46100E74609 /* TSTLReader.h */,
+				8318E2010D2AD9790052FF20 /* TTexture.h */,
+				83CA92440CDA418400490DD3 /* TTextureBrowserProjComponent.h */,
+				83A3AF570CD7DB7F002BA694 /* TTextureBrowserView.h */,
+				8399974A0DD077CA00E74609 /* TTriangleMesh.h */,
+				8318E1BE0D2A63A30052FF20 /* TVec3D.h */,
+				83B1BE2E0D1EA0FE00DDB438 /* TVisibility.h */,
+				83EF62C40CD8ABCE00C3EEB1 /* TWADReader.h */,
+				83C089380D114208000FAD20 /* TWADWriter.h */,
 			);
-			name = Headers;
+			path = Headers;
 			sourceTree = "<group>";
 		};
 		830AEE010CE9D3E5005CC888 /* RenderUtils */ = {
@@ -517,119 +530,127 @@
 			children = (
 				830AEE030CE9D403005CC888 /* TRenderUtilBox.m */,
 			);
-			name = RenderUtils;
+			path = RenderUtils;
 			sourceTree = "<group>";
 		};
 		8318E2B30D2B9DDE0052FF20 /* EntityClassRender */ = {
 			isa = PBXGroup;
 			children = (
-				832031F30D301CB40072C3EE /* TEntityClassRenderComponentEMDL.m */,
-				8318E2CA0D2B9F610052FF20 /* TEntityClassRenderComponentArrow.m */,
-				830D8F6F0D2D039B00610A56 /* TEntityClassRenderComponentMDL.m */,
 				8318E2BF0D2B9E140052FF20 /* TEntityClassRenderComponent.m */,
+				8318E2CA0D2B9F610052FF20 /* TEntityClassRenderComponentArrow.m */,
+				832031F30D301CB40072C3EE /* TEntityClassRenderComponentEMDL.m */,
+				830D8F6F0D2D039B00610A56 /* TEntityClassRenderComponentMDL.m */,
 			);
 			name = EntityClassRender;
+			path = Components/EntityClassRender;
 			sourceTree = "<group>";
 		};
-		8318E2D20D2BA6890052FF20 /* definitions */ = {
+		8318E2D20D2BA6890052FF20 /* Definitions */ = {
 			isa = PBXGroup;
 			children = (
-				8318E2B10D2B9DBE0052FF20 /* ToeTag.cmp */,
 				830AEC9B0CE9B79D005CC888 /* quake.def */,
+				8318E2B10D2B9DBE0052FF20 /* ToeTag.cmp */,
 				830D91D20D2E522E00610A56 /* worldspawn.def */,
 			);
-			name = definitions;
+			name = Definitions;
+			path = Resources/Definitions;
 			sourceTree = "<group>";
 		};
 		833D98B30CD8961100B1F3D0 /* Render */ = {
 			isa = PBXGroup;
 			children = (
 				83DCC0BA0CE08BB1005B80DC /* Grid */,
+				832CD6040CD7E3B8003849D6 /* TRenderComponent.m */,
 				83DCBFFA0CDFEA6F005B80DC /* TRenderLevelOrthoComponent.m */,
 				834FECED0DC1F13C00C04259 /* TRenderLevelTexturedComponent.m */,
 				832CD6EA0CD7F202003849D6 /* TRenderTextureBrowserComponent.m */,
-				832CD6040CD7E3B8003849D6 /* TRenderComponent.m */,
 			);
 			name = Render;
+			path = Components/Render;
 			sourceTree = "<group>";
 		};
 		833D98B40CD8961A00B1F3D0 /* Projection */ = {
 			isa = PBXGroup;
 			children = (
-				832CD6840CD7EE7B003849D6 /* TProjComponent.m */,
 				832CD6860CD7EE7B003849D6 /* TOrthoProjComponent.m */,
+				832CD6840CD7EE7B003849D6 /* TProjComponent.m */,
 				83CA92450CDA418400490DD3 /* TTextureBrowserProjComponent.m */,
 			);
 			name = Projection;
+			path = Components/Projection;
 			sourceTree = "<group>";
 		};
 		8354218E0CEFAEEA002996F8 /* Items */ = {
 			isa = PBXGroup;
 			children = (
-				835421BB0CEFAEFD002996F8 /* BSmallShells.MAP */,
-				835421A60CEFAEFD002996F8 /* BLargeShells.MAP */,
-				835421AC0CEFAEFD002996F8 /* BSmallBattery.MAP */,
-				835421AD0CEFAEFD002996F8 /* BLargeBattery.MAP */,
-				835421AE0CEFAEFD002996F8 /* BRottedHealth.MAP */,
 				835421AF0CEFAEFD002996F8 /* BHealth.MAP */,
-				835421B00CEFAEFD002996F8 /* BMegaHealth.MAP */,
-				835421B20CEFAEFD002996F8 /* BSmallExplodingBox.MAP */,
+				835421AD0CEFAEFD002996F8 /* BLargeBattery.MAP */,
 				835421B30CEFAEFD002996F8 /* BLargeExplodingBox.MAP */,
-				835421B60CEFAEFD002996F8 /* BSmallNails.MAP */,
 				835421B70CEFAEFD002996F8 /* BLargeNails.MAP */,
-				835421B90CEFAEFD002996F8 /* BSmallRockets.MAP */,
 				835421BA0CEFAEFD002996F8 /* BLargeRockets.MAP */,
+				835421A60CEFAEFD002996F8 /* BLargeShells.MAP */,
+				835421B00CEFAEFD002996F8 /* BMegaHealth.MAP */,
+				835421AE0CEFAEFD002996F8 /* BRottedHealth.MAP */,
+				835421AC0CEFAEFD002996F8 /* BSmallBattery.MAP */,
+				835421B20CEFAEFD002996F8 /* BSmallExplodingBox.MAP */,
+				835421B60CEFAEFD002996F8 /* BSmallNails.MAP */,
+				835421B90CEFAEFD002996F8 /* BSmallRockets.MAP */,
+				835421BB0CEFAEFD002996F8 /* BSmallShells.MAP */,
 			);
 			name = Items;
+			path = Resources/Items;
 			sourceTree = "<group>";
 		};
 		83740C420D4369FC007F76F3 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				832E097C0D529D0400305B3D /* ToeTagLogo.icns */,
+				839D53580D0578E300C1DBE1 /* DownArrow.png */,
 				83740C4A0D436A0A007F76F3 /* Flag.png */,
 				83740C4B0D436A0A007F76F3 /* Flag_1.png */,
 				83740C4C0D436A0A007F76F3 /* Flag_3.png */,
+				832E097C0D529D0400305B3D /* ToeTagLogo.icns */,
+				839D53590D0578E300C1DBE1 /* UpArrow.png */,
 			);
 			name = Icons;
+			path = Resources/Icons;
 			sourceTree = "<group>";
 		};
 		8392730A0CD7BF07009105FA /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				8318E2020D2AD9790052FF20 /* TTexture.m */,
-				8318E1D00D2A65660052FF20 /* TEntityClass.m */,
-				8318E1BB0D2A63A30052FF20 /* TMatrix.m */,
-				839997420DD077BE00E74609 /* TTriangleMesh.m */,
-				8318E1BD0D2A63A30052FF20 /* TPlane.m */,
-				8318E1BF0D2A63A30052FF20 /* TVec3D.m */,
+				8318E1B50D2A634E0052FF20 /* TBrush.m */,
 				83F194700D38E2DC005F0830 /* TEdge.m */,
 				83A310400E45C2EE001DB45B /* TEdgeFull.m */,
-				8318E1B70D2A63610052FF20 /* TFace.m */,
 				83B471C00CDC7C9400A8F7BA /* TEntity.m */,
-				8318E1B50D2A634E0052FF20 /* TBrush.m */,
+				8318E1D00D2A65660052FF20 /* TEntityClass.m */,
+				8318E1B70D2A63610052FF20 /* TFace.m */,
+				8318E1BB0D2A63A30052FF20 /* TMatrix.m */,
+				8318E1BD0D2A63A30052FF20 /* TPlane.m */,
+				8318E2020D2AD9790052FF20 /* TTexture.m */,
+				839997420DD077BE00E74609 /* TTriangleMesh.m */,
+				8318E1BF0D2A63A30052FF20 /* TVec3D.m */,
 			);
-			name = Core;
+			path = Core;
 			sourceTree = "<group>";
 		};
 		8392730B0CD7BF14009105FA /* OpenGL */ = {
 			isa = PBXGroup;
 			children = (
 				83A3AF840CD7DD87002BA694 /* TLevelView.m */,
+				839272BB0CD7B3AB009105FA /* TOpenGLView.m */,
 				83A3AF860CD7DD87002BA694 /* TOrthoLevelView.m */,
 				83A3AF580CD7DB7F002BA694 /* TTextureBrowserView.m */,
-				839272BB0CD7B3AB009105FA /* TOpenGLView.m */,
 			);
-			name = OpenGL;
+			path = OpenGL;
 			sourceTree = "<group>";
 		};
 		83A3AEFF0CD7DA97002BA694 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				832CD6060CD7E3B8003849D6 /* TComponent.m */,
 				8318E2B30D2B9DDE0052FF20 /* EntityClassRender */,
 				833D98B40CD8961A00B1F3D0 /* Projection */,
 				833D98B30CD8961100B1F3D0 /* Render */,
-				832CD6060CD7E3B8003849D6 /* TComponent.m */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -637,76 +658,76 @@
 		83B1BE180D1EA0D300DDB438 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				83B1BE2D0D1EA0FE00DDB438 /* TVisibility.m */,
-				8355CBD50CF49284008BA0CD /* TSelection.m */,
 				83FD1DE70CF795E400B96598 /* THistory.m */,
+				8355CBD50CF49284008BA0CD /* TSelection.m */,
+				83B1BE2D0D1EA0FE00DDB438 /* TVisibility.m */,
 			);
-			name = Managers;
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		83C089250D1141C4000FAD20 /* Readers */ = {
 			isa = PBXGroup;
 			children = (
-				83968E860DE6D83A00C87933 /* TOBJReader.m */,
-				839997680DD1B45600E74609 /* TSTLReader.m */,
 				83BC05BA0D2BAE7500D558E2 /* TCMPReader.m */,
-				83E492930CF0A63200AE1306 /* TEMDLReader.m */,
-				83DEEF5E0CEF0DD50089C411 /* TPAKReader.m */,
-				83EF62C20CD8AB9A00C3EEB1 /* TFileReader.m */,
-				83EF62C50CD8ABCE00C3EEB1 /* TWADReader.m */,
 				830AEC9E0CE9B978005CC888 /* TDEFReader.m */,
+				83E492930CF0A63200AE1306 /* TEMDLReader.m */,
+				83EF62C20CD8AB9A00C3EEB1 /* TFileReader.m */,
+				83968E860DE6D83A00C87933 /* TOBJReader.m */,
+				83DEEF5E0CEF0DD50089C411 /* TPAKReader.m */,
+				839997680DD1B45600E74609 /* TSTLReader.m */,
+				83EF62C50CD8ABCE00C3EEB1 /* TWADReader.m */,
 			);
 			name = Readers;
+			path = Files/Readers;
 			sourceTree = "<group>";
 		};
 		83C089260D1141D1000FAD20 /* Writers */ = {
 			isa = PBXGroup;
 			children = (
-				835198A20D3B752A00BE8215 /* TLOGWriter.m */,
 				83C0893C0D114236000FAD20 /* TFileWriter.m */,
+				835198A20D3B752A00BE8215 /* TLOGWriter.m */,
 				83C089390D114208000FAD20 /* TWADWriter.m */,
 			);
 			name = Writers;
+			path = Files/Writers;
 			sourceTree = "<group>";
 		};
 		83DCC0900CDFF11B005B80DC /* BrushBuilders */ = {
 			isa = PBXGroup;
 			children = (
-				831528A90D205DE400C72057 /* TBrushBuilderSpike.m */,
-				831528340D2045CF00C72057 /* TBrushBuilderCylinder.m */,
-				8322222A0D15CDA200131448 /* TBrushBuilderWedge.m */,
 				83DCC0960CE07EE3005B80DC /* TBrushBuilderCube.m */,
+				831528340D2045CF00C72057 /* TBrushBuilderCylinder.m */,
+				831528A90D205DE400C72057 /* TBrushBuilderSpike.m */,
+				8322222A0D15CDA200131448 /* TBrushBuilderWedge.m */,
 			);
-			name = BrushBuilders;
+			path = BrushBuilders;
 			sourceTree = "<group>";
 		};
 		83DCC0BA0CE08BB1005B80DC /* Grid */ = {
 			isa = PBXGroup;
 			children = (
 				83DCC0BC0CE08BCA005B80DC /* TRenderGridComponent.m */,
-				83DCC0BB0CE08BCA005B80DC /* TRenderGridComponent.h */,
 				83E2E96D0CE8727900CFC2BB /* TRenderGridOrthoComponent.m */,
-				83E2E96C0CE8727900CFC2BB /* TRenderGridOrthoComponent.h */,
 			);
-			name = Grid;
+			path = Grid;
 			sourceTree = "<group>";
 		};
 		83E490140CF0533900AE1306 /* Textures */ = {
 			isa = PBXGroup;
 			children = (
-				83E492730CF09D0B00AE1306 /* toetagdefault.bmp */,
+				8331CFA60CDB475800A60239 /* QuakePalette.lmp */,
 				83E490190CF0534C00AE1306 /* +0_box_side.bmp */,
 				83E4901A0CF0534C00AE1306 /* +0_box_top.bmp */,
+				83E4901D0CF0534C00AE1306 /* +0_med100.bmp */,
 				83E4901B0CF0534C00AE1306 /* +0_med25.bmp */,
 				83E4901C0CF0534C00AE1306 /* +0_med25s.bmp */,
-				83E4901D0CF0534C00AE1306 /* +0_med100.bmp */,
 				83E4901E0CF0534C00AE1306 /* batt0sid.bmp */,
 				83E4901F0CF0534C00AE1306 /* batt0top.bmp */,
 				83E490200CF0534C00AE1306 /* batt1sid.bmp */,
 				83E490210CF0534C00AE1306 /* batt1top.bmp */,
+				83E490240CF0534C00AE1306 /* med100.bmp */,
 				83E490220CF0534C00AE1306 /* med3_0.bmp */,
 				83E490230CF0534C00AE1306 /* med3_1.bmp */,
-				83E490240CF0534C00AE1306 /* med100.bmp */,
 				83E490250CF0534C00AE1306 /* nail0sid.bmp */,
 				83E490260CF0534C00AE1306 /* nail0top.bmp */,
 				83E490270CF0534C00AE1306 /* nail1sid.bmp */,
@@ -718,15 +739,17 @@
 				83E4902D0CF0534C00AE1306 /* shot0top.bmp */,
 				83E4902E0CF0534C00AE1306 /* shot1sid.bmp */,
 				83E4902F0CF0534C00AE1306 /* shot1top.bmp */,
+				83E492730CF09D0B00AE1306 /* toetagdefault.bmp */,
 			);
 			name = Textures;
+			path = Resources/Textures;
 			sourceTree = "<group>";
 		};
 		83EF62C00CD8AB8100C3EEB1 /* Files */ = {
 			isa = PBXGroup;
 			children = (
-				83C089260D1141D1000FAD20 /* Writers */,
 				83C089250D1141C4000FAD20 /* Readers */,
+				83C089260D1141D1000FAD20 /* Writers */,
 			);
 			name = Files;
 			sourceTree = "<group>";
@@ -734,14 +757,15 @@
 		83F362430D24728D0088E2AB /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
-				836101AF0E83B7330020CC24 /* TBuildInspectorDelegate.m */,
-				8313EC050D232154005959BD /* TPreferencesPanelDelegate.m */,
 				83B472900CDC94C700A8F7BA /* TApplicationDelegate.m */,
+				836101AF0E83B7330020CC24 /* TBuildInspectorDelegate.m */,
+				8313EC8A0D23BBFB005959BD /* TDlgRenameDelegate.m */,
 				8324929D0D02D5DB005C1AD3 /* TEntityInspectorDelegate.m */,
 				83316F4E0CFF8D14001CBF2E /* TFaceInspectorDelegate.m */,
-				8313EC8A0D23BBFB005959BD /* TDlgRenameDelegate.m */,
+				8313EC050D232154005959BD /* TPreferencesPanelDelegate.m */,
 			);
 			name = Delegates;
+			path = ../Application/Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -780,6 +804,7 @@
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* ToeTag */;
 			projectDirPath = "";
@@ -796,8 +821,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */,
-				8D15AC2D0486D014006FF6A4 /* MainMenu.nib in Resources */,
-				8D15AC2E0486D014006FF6A4 /* MAPDocument.nib in Resources */,
 				8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */,
 				8331CFA70CDB475800A60239 /* QuakePalette.lmp in Resources */,
 				830AEC9C0CE9B79D005CC888 /* quake.def in Resources */,
@@ -807,6 +830,7 @@
 				835421C40CEFAEFD002996F8 /* BRottedHealth.MAP in Resources */,
 				835421C50CEFAEFD002996F8 /* BHealth.MAP in Resources */,
 				835421C60CEFAEFD002996F8 /* BMegaHealth.MAP in Resources */,
+				7FF33C371891BA5B002D156F /* MAPDocument.nib in Resources */,
 				835421C80CEFAEFD002996F8 /* BSmallExplodingBox.MAP in Resources */,
 				835421C90CEFAEFD002996F8 /* BLargeExplodingBox.MAP in Resources */,
 				835421CC0CEFAEFD002996F8 /* BSmallNails.MAP in Resources */,
@@ -836,6 +860,7 @@
 				83E490400CF0534C00AE1306 /* rock0sid.bmp in Resources */,
 				83E490410CF0534C00AE1306 /* rock1sid.bmp in Resources */,
 				83E490420CF0534C00AE1306 /* rockettop.bmp in Resources */,
+				7FF33C361891BA5B002D156F /* MainMenu.nib in Resources */,
 				83E490430CF0534C00AE1306 /* shot0sid.bmp in Resources */,
 				83E490440CF0534C00AE1306 /* shot0top.bmp in Resources */,
 				83E490450CF0534C00AE1306 /* shot1sid.bmp in Resources */,
@@ -843,6 +868,7 @@
 				83E492740CF09D0B00AE1306 /* toetagdefault.bmp in Resources */,
 				839D535A0D0578E300C1DBE1 /* DownArrow.png in Resources */,
 				839D535B0D0578E300C1DBE1 /* UpArrow.png in Resources */,
+				7FF33C3E1891D90B002D156F /* Info.plist in Resources */,
 				8318E2B20D2B9DBE0052FF20 /* ToeTag.cmp in Resources */,
 				830D91D30D2E522F00610A56 /* worldspawn.def in Resources */,
 				83740C4D0D436A0A007F76F3 /* Flag.png in Resources */,
@@ -933,22 +959,6 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		2A37F4B4FDCFA73011CA2CEA /* MAPDocument.nib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2A37F4B5FDCFA73011CA2CEA /* English */,
-			);
-			name = MAPDocument.nib;
-			sourceTree = "<group>";
-		};
-		2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2A37F4B7FDCFA73011CA2CEA /* English */,
-			);
-			name = MainMenu.nib;
-			sourceTree = "<group>";
-		};
 		2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -989,9 +999,9 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = ToeTag_Prefix.pch;
+				GCC_PREFIX_HEADER = Application/ToeTag_Prefix.pch;
 				GENERATE_PROFILING_CODE = YES;
-				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				OTHER_CFLAGS = "";
@@ -1019,10 +1029,10 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = ToeTag_Prefix.pch;
+				GCC_PREFIX_HEADER = Application/ToeTag_Prefix.pch;
 				GCC_WARN_SHADOW = YES;
 				GENERATE_PROFILING_CODE = NO;
-				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				INFOPLIST_PREPROCESSOR_DEFINITIONS = DEBUG;
 				INSTALL_PATH = "$(HOME)/Applications";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
@@ -1053,12 +1063,12 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = ToeTag_Prefix.pch;
+				GCC_PREFIX_HEADER = Application/ToeTag_Prefix.pch;
 				GCC_STRICT_ALIASING = YES;
 				GCC_THREADSAFE_STATICS = YES;
 				GCC_UNROLL_LOOPS = YES;
 				GENERATE_PROFILING_CODE = NO;
-				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = ToeTag;
